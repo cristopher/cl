@@ -1,0 +1,55 @@
+/*** LAX ***/
+.wpb_row.lax-active {
+    position: relative;
+    overflow: hidden;
+}
+.wpb_row.lax-active .cs-row-fullwidth,
+.wpb_row.lax-active .cs-row-container  {
+    position: relative;
+    z-index: 30;    
+}
+.cshero-lax .cshero-lax-content img {
+    max-width: none;
+    pointer-events: none;
+    width: auto;
+}
+.cshero-lax .cshero-lax-content {
+    text-align: center;
+}
+.cshero-lax .cshero-lax-content:nth-child(1) {
+    -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+         -o-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index: 5;
+}
+.cshero-lax .cshero-lax-content:nth-child(2) {
+    pointer-events: none;
+    -webkit-transform: scale(1.2);
+       -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+         -o-transform: scale(1.2);
+            transform: scale(1.2);
+    z-index: 10;
+}
+.wpb_row .cshero-lax,
+.wpb_row .cshero-lax-layer,
+.wpb_row .cshero-lax .cshero-lax-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+}
+.wpb_row .cshero-lax-layer {
+    z-index: 20;
+}
+.wpb_row .cshero-lax-layer .cshero-layer-item {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+	background-position: top left;
+}
